@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.background {
+  background-color: #fdf7e4;
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-logo {
+  width: 300px;
+}
+
+.bar-item {
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu ul {
+  list-style-type: none;
+}
+.bar-item{
+  display: none;
+}
+.menu-phone {
+  display: none;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.scrolling-text {
+  font-size: 16px;
+  color: red;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.middle-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  flex-shrink: 2;
+}
+.first-obj{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.second-obj{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 20px;
+  flex-shrink: 2;
+  
+}
+.first-obj-1{
+  max-width: 500px;
+  min-width: 250px;
+  flex-shrink: 1;
+}
+.student-image{
+  width: 100%;
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.some-content-1{
+  max-width: 500px;
+  min-width: 250px;
+  flex-shrink: 1;
+
+}
+.some-image{
+  margin-right: 10px;
+}
+.some-content{
+  margin-left: 10px;
+}
+.some-content{
+  border: 1px solid transparent;
+  background-color: transparent;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-around;
+  align-self: center;
+  text-align: center;
+}
+.some-para2{
+  width: 100%;
+}
+@media screen and (min-width:100px) and (max-width: 768px){
+.background {
+  background-color: #fdf7e4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+
+}
+  .img-logo {
+      width: 250px;
+      left: 20px;
+    }
+  
+  .bar-item{
+      display: block;
+    }
+    .menu-phone {
+      position: relative;
+      float:right;
+      left: 20px;
+    }
+  .menu{
+      display: none;
+  }
+  .menu-phone ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .menu ul li {
+      line-height: 10px;
+      gap: 20px;
+    }
+  .menu-phone ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    .menu-phone ul li a:hover {
+      text-decoration: underline;
+      color: black;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+  .hidensic{
+      display: block;
+  }
+  .bars-section{
+      width: 50px;
+  }
+  .main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-part{
+    margin: 0px;
+  }
+  .first-obj{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    order: 2;
+  }
+  .first-obj-1{
+    width: 100%;
+    
+  }
+  .second-obj{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    order: 3;
+  }
+  .some-image{
+    width: 100%;
+  }
+  .student-image{
+    width: 100%;
+  background-size: cover;
+  }
+  .some-content-1{
+    width: 100%;
+  }
+  .some-content{
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-align: start;
+  }
+  .some-para2{
+    width: 90%;
+  }
+  .some-form{
+    order: 1;
+    width: 100%;
+  }
+  .students{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 5px;
+  }
+  .stdent-btm-heading{
+    color: #000000;
+    font-size: 14px;
+  }
+  .stdent-btm-para{
+    font-size: 10px;
+    color: #000000;
+  }
+}
+.gd{
+  display: flex;
+  flex-direction: row;
+}
+.students{
+  font-size: 30px;
+  color: black;
+  padding-bottom: 5px;
+}
+.stdent-btm-heading{
+  color: #000000;
+  font-size: 18px;
+}
+.stdent-btm-para{
+  font-size: 16px;
+  color: #000000;
+}
+
+ct-box{
+width: 100%;
+}
+.text-add{
+font-size: 32px;
+}
+
+.button-container{
+display: flex;
+justify-content: center;
+}
+
+.button-element{
+background-color: green;
+color: #fff;
+border: 1px solid green;
+padding: 10px;
+border-radius: 5px;
+
+}
+.some-form{
+  width: 300px;
+  margin: 20px;
+  float: right;
+}
+.login-form{
+  font-size: 22px;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #000000;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3496c27bda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="registrationpage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <!-- Add your CDN links for Bootstrap, Font Awesome, and other stylesheets here -->
+</head>
+<body>
+  <div class="background">
+    <div>   
+      <nav class="navbar">
+        <div class="img-section">
+        <img src="./assets/ampmlogo.png" class="img-logo" alt="Logo">
+        </div>
+        <div class="bars-section">
+        <i class="fas fa-bars bar-item"></i> <!-- Use 'fas' for Font Awesome Solid icons -->
+        </div>
+        <div class="menu">
+        <ul class="menu-sec">
+          <li><a href="#homeSection">HOME</a></li>
+          <li><a href="#aboutSection">STUDENTS</a></li>
+          <li><a href="#serviceSection">EMPLOYERS</a></li>
+          <li><a href="#contactSection">ABOUT US</a></li>
+          <li><a href="#contactSection">CONTACT US</a></li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="menu-phone">
+      <ul>
+        <li><a href="#homeSection">HOME</a></li>
+        <li><a href="#aboutSection">STUDENTS</a></li>
+        <li><a href="#serviceSection">EMPLOYERS</a></li>
+        <li><a href="#contactSection">ABOUT US</a></li>
+        <li><a href="#contactSection">CONTACT US</a></li>
+      </ul>
+    </div>
+    
+    <marquee behavior="scroll" direction="left" class="scrolling-text"> * Welcome to the ampmjobs *</marquee>
+    <div class="main-container">
+      <div class="middle-part">
+        <div class="first-obj order-2 order-md-1">
+          <div class="first-obj-1">
+            <div class="some-image">
+                <img src="https://res.cloudinary.com/dndhjbuy4/image/upload/v1701775264/wibyeyrian4ecrchuzhr.jpg" class="student-image"/>
+            </div>
+          </div>
+          <div class="some-content-1">
+            <div class="some-content">
+                <p class="some-para2">Hello World,Welcome to the ampm jobs portal, Here more oppertunities and earn when you are in free time.
+                    Who can join its above 18 years can join.How to register:Its very simple please select an option student if u are searching
+                    for job and register.After completing registering process you are directly show jobs based on 5-Interests.Simple to follow 
+                    Register,Apply,Selected,Earn Money.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="second-obj order-3 order-md-2">
+          <div class="part-1 text-center">
+                <i class="fa-solid fa-graduation-cap students"></i>
+                <h1 class="stdent-btm-heading"> Employers</h1>
+                <p class="stdent-btm-para">1500 + registered </p>
+                </div>
+                <div class="part-1 text-center">
+                    <i class="fa-solid fa-user students"></i>
+                    <h1 class="stdent-btm-heading"> Register </h1>
+                    <p class="stdent-btm-para"> With Mobile No. </p>
+                </div>
+                <div class="part-1 text-center">
+                    <i class="fa-solid fa-user students"></i>
+                    <h1 class="stdent-btm-heading"> Profile </h1>
+                    <p class="stdent-btm-para"> Add Your Details  </p>
+                </div>
+          <div class="part-1 text-center">
+            <i class="fa-solid fa-list-check students"></i>
+            <h1 class="stdent-btm-heading"> Requirements </h1>
+            <p class="stdent-btm-para"> Add your Skills </p>
+            </div>
+            <div class="part-1 text-center">
+                <i class="fa-solid fa-circle-check students"></i>
+                <h1 class="stdent-btm-heading"> Shortlist </h1>
+                <p class="stdent-btm-para"> abcdefghij </p>
+            </div>
+            <div class="part-1 text-center">
+                <i class="fa-regular fa-comment students"></i>
+                <h1 class="stdent-btm-heading"> Feedback </h1>
+                <p class="stdent-btm-para"> abcdefghij </p>
+            </div>
+        </div>
+      </div>
+      <div class="some-form order-1 order-md-3">
+        <h1 class="login-form text-center">Please Sign In/Sign Up</h1>
+        <br/>
+        <form>
+            <div class="input-container">
+                <label class="mobile-number" required> Your Number</label>
+                  <div class="gd">
+                    <select >
+                      <option aria-readonly=""> +91 </option>
+                    </select>
+                    <input type="number">
+                  </div>
+                <br/>
+                <button class="button-element" id="generateOTP" onclick="randomNumber()">Generate OTP</button>
+                <br/>
+                <label class="mobile-number">Enter OTP</label>
+                <input type="number" id="userInput">
+                <br/>
+                <div class="button-container">
+                  <button type="submit" class="button-element" onclick="checkNumber()">Submit</button>
+              </div>
+            </div>
+        </form>
+        
+    </div>
+    </div>
+  </div>
+
+  <script>
+    
+    function generateRandomNumber() {
+            return Math.floor(1000 + Math.random() * 9000);
+        }
+
+        // Generate the random number
+        var randomNumber = generateRandomNumber();
+        console.log(randomNumber);
+
+        // Function to check if the entered value is equal to the generated number
+        function checkNumber() {
+            // Get the user-entered value
+            var userEnteredValue = document.getElementById('userInput').value;
+            console.log(userEnteredValue);
+            // Check if the entered value is equal to the generated number
+            if (userEnteredValue == randomNumber) {
+                alert("Your OTP is Verified");
+                // Redirect to the next page if they match
+                return true;
+            } else {
+                // Display a message if the numbers do not match
+                alert('Incorrect! Try again.');
+            }
+          wi
+          return true;
+
+        }
+        
+
+
+    let element = document.querySelector(".bar-item");
+    let menuEl = document.querySelector(".menu-phone");
+    let barEl = document.getElementById(".bars-section");
+    element.onclick = function() {
+        menuEl.classList.toggle("hidensic");
+        barEl.classList.toggle("add-colur");
+
+    }
+</script>
+</body>
+</html>
+
+<style>
+</style>

@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .background {
+    background-color: #fdf7e4;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-logo {
+    width: 300px;
+  }
+
+  .bar-item {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .bar-item{
+    display: none;
+  }
+  .menu-phone {
+    display: none;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+.stop{
+  display: none;
+}
+  .menu ul li {
+    margin-right: 20px;
+  }
+
+  .menu ul li:last-child {
+    margin-right: 0;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  .menu ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .scrolling-text {
+    font-size: 16px;
+    color: red;
+  }
+  
+@media screen and (min-width:100px) and (max-width: 768px){
+  .background {
+    background-color: #fdf7e4;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+    .img-logo {
+        width: 250px;
+        left: 20px;
+      }
+    
+    .bar-item{
+        display: block;
+      }
+      .menu-phone {
+        position: relative;
+        float:right;
+        left: 20px;
+      }
+    .menu{
+        display: none;
+    }
+    .menu-phone ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .menu ul li {
+        line-height: 10px;
+        gap: 20px;
+      }
+    .menu-phone ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .menu-phone ul li a:hover {
+        text-decoration: underline;
+        color: black;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+    .hidensic{
+        display: block;
+    }
+    .bars-section{
+        width: 50px;
+    }
+    .select-plan{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border: 1px solid black;
+      margin: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .plans-container{
+      list-style: none;
+    }
+    .label-amt{
+      display: flex;
+      flex-direction: row;
+    }
+    .space{
+      padding: 10px;
+    }
+
+}.debit-container{
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-shrink: 2;
+}
+.middle-part{
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.first-obj{
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 400px;
+  min-width: 200px;
+  
+}
+.horizontal{
+  width: 100%;
+}
+.images-box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-shrink: 1;
+}
+.sbi-image{
+  max-width: 70px;
+  min-width: 50px;
+  height: 70px;
+
+}
+.scanner-image{
+  max-width: 220px;
+  min-width: 100px;
+  height: 220px;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button-element{
+  background-color: green;
+  color: #fff;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+.text-heading-size{
+  font-size: 18px;
+  font-weight: bold;
+}
+.text-size{
+  font-size: 14px;
+  font-weight: bold;
+}
+.select-plan{
+  display: flex;
+  max-width: 400px;
+  min-width: 200px;
+  height: 100%;
+  border: 1px solid black;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.plans-container{
+  list-style: none;
+}
+.label-amt{
+  display: flex;
+  flex-direction: row;
+}
+.space{
+  padding: 10px;
+}

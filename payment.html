@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3496c27bda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payment.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <!-- Add your CDN links for Bootstrap, Font Awesome, and other stylesheets here -->
+</head>
+<body>
+  <div class="background">
+    <div>   
+      <nav class="navbar">
+        <div class="img-section">
+        <img src="./assets/ampmlogo.png" class="img-logo" alt="Logo">
+        </div>
+        <div class="bars-section">
+        <i class="fas fa-bars bar-item"></i> <!-- Use 'fas' for Font Awesome Solid icons -->
+        </div>
+        <div class="menu">
+        <ul class="menu-sec">
+          <li><a href="#homeSection">HOME</a></li>
+          <li><a href="#aboutSection">STUDENTS</a></li>
+          <li><a href="#serviceSection">EMPLOYERS</a></li>
+          <li><a href="#contactSection">ABOUT US</a></li>
+          <li><a href="#contactSection">CONTACT US</a></li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="menu-phone">
+      <ul>
+        <li><a href="#homeSection">HOME</a></li>
+        <li><a href="#aboutSection">STUDENTS</a></li>
+        <li><a href="#serviceSection">EMPLOYERS</a></li>
+        <li><a href="#contactSection">ABOUT US</a></li>
+        <li><a href="#contactSection">CONTACT US</a></li>
+      </ul>
+    </div>
+    
+    <marquee behavior="scroll" direction="left" class="scrolling-text"> * Welcome to the ampmjobs *</marquee>
+    <div class="middle-part">
+      <div class="first-obj">
+        <div class="debit-container">
+          <p class="debit-content">Debit Card/Credit Card</p>
+          <div class="images-box">
+            <img src="./assets/images.png" class="sbi-image"/>
+            <img src="./assets/sbi-bank.png" class="sbi-image"/>
+            <img src="./assets/icici.png" class="sbi-image"/>
+          </div>
+        </div>
+        <hr class="horizontal">
+        <div class="debit-container">
+          <p class="debit-content"> UPI/BHIM </p>
+          <div class="images-box">
+            <img src="./assets/gpay.jpg" class="sbi-image"/>
+            <img src="./assets/phpay.jpg" class="sbi-image"/>
+          </div>
+        </div>
+        <hr class="horizontal">
+        <div class="debit-container">
+          <p class="debit-content"> Scanner </p>
+          <img src="./assets/scanner.jpg" class="scanner-image"/>
+        </div>
+      </div>
+      <!--<div class="password-middle">-->
+            
+        <div class="select-plan">
+            
+            <ul class="plans-container">
+              <div id="individualBox">
+                <div class="label-amt text-center">
+
+                <label class="text-heading-size">Individual</label>
+                </div>
+                <div class="label-amt space">
+                <input type="radio"  name="com-amt">
+                <li class="text-size"> 1500 <span class="text-size">  -  15 Days</span></li>
+                </div>
+                <div class="label-amt space">
+                <input type="radio" name="com-amt">
+                <li class="text-size"> 2500<span class="text-size">  -  Per Month</span></li>
+                </div>
+              </div>
+              <div id="companyBox">
+                <div class="label-amt">
+                <label class="text-heading-size">Company</label>
+                </div>
+                <div class="label-amt space">
+                <input type="radio" name="com-amt">
+                <li class="text-size"> 1500<span class="text-size">  -  Per Month</span></li>
+                </div>
+                <div class="label-amt space">
+                <input type="radio" name="com-amt">
+                <li class="text-size"> 2500<span class="text-size">  -  3 Months</span></li>
+                </div>
+                <div class="label-amt space">
+                <input type="radio" name="com-amt">
+                <li class="text-size"> 5000<span class="text-size">  -  6 Months</span></li>
+                </div>
+                <div class="label-amt space">
+                <input type="radio" name="com-amt">
+                <li class="text-size"> 8000<span class="text-size">  -  1 Year</span></li>
+                </div>
+              </div>
+            </ul>
+        </div>
+    </div>
+    <div class="button-container">
+      <button type="submit" class="button-element" onclick="redirectToNextPage()">Proceed to Pay</button>
+  </div>
+  </div>
+  <script>
+   window.onload = function() {
+        let value = localStorage.getItem('myResult');
+        console.log(value);
+        let companyBoxEl = document.getElementById("companyBox");
+        let individualBoxEl = document.getElementById("individualBox");
+        if(value == "INDIVIDUAL"){
+          companyBoxEl.classList.add("stop");
+        }
+        else if(value == "COMPANY"){
+          individualBoxEl.classList.add("stop");
+        }
+
+   }
+    function redirectToNextPage() {
+      window.location.href='./dashboard.html';
+    }
+    let element = document.querySelector(".bar-item");
+    let menuEl = document.querySelector(".menu-phone");
+    let barEl = document.getElementById(".bars-section");
+    element.onclick = function() {
+        menuEl.classList.toggle("hidensic");
+        barEl.classList.toggle("add-colur");
+
+    }
+</script>
+</body>
+</html>
+
+<style>
+</style>
